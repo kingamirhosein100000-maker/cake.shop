@@ -1,0 +1,375 @@
+                    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        font-family: "Poppins", sans-serif;
+                    }
+
+                    :root {
+                        --orange-clr: #E96C28;
+                        --white-clr: #FFF;
+                        --black-clr: #000;
+                        --gray-clr: #636363;
+                        --light-clr: #C4C4C4;
+                        --dawn-pink: #FAE7E5;
+                        --frosted-mint: #DCFEF9;
+                    }
+
+                    /* Header Parts */
+
+                    .logo-txt {
+                        font-size: 1.5rem;
+                        color: var(--orange-clr);
+                        font-weight: bold;
+                    }
+
+                    a {
+                        text-decoration: none;
+                    }
+
+                    span {
+                        color: var(--black-clr);
+                    }
+
+                    .navlist {
+                        display: flex;
+                        align-items: center;
+                        gap: 2rem;
+                    }
+
+                    li {
+                        list-style: none;
+                    }
+
+                    .navlinks {
+                        color: var(--black-clr);
+                        font-weight: 500;
+                    }
+
+                    .active,
+                    .navlinks:hover {
+                        color: var(--orange-clr);
+                        transition: 0.4s;
+                    }
+
+
+
+                    .icons-link {
+                        background: var(--orange-clr);
+                        width: 2.3rem;
+                        aspect-ratio: 1;
+                        border-radius: 50%;
+                        margin-right: .5rem;
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 2.3rem;
+                        transition: .3s ease-in-out;
+                    }
+
+                    .icons-link:hover {
+                        transform: translateY(-10%);
+                    }
+
+                    .fa-solid,
+                    .fa-brands {
+                        font-size: 1.1rem;
+                        color: var(--white-clr);
+                    }
+
+                    header {
+                        height: 13vh;
+
+                    }
+
+                    .navbar {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 100%;
+
+                    }
+
+                    .container {
+                        width: 80%;
+                        margin: auto;
+                    }
+
+                    .hamburger {
+                        cursor: pointer;
+                        display: none;
+                    }
+
+                    .burger {
+                        background: var(--black-clr);
+                        width: 2.3rem;
+                        height: .25rem;
+                        margin: .3rem;
+                        border-radius: 2rem;
+                    }
+
+                    /* Section Parts */
+                    /* hero-section */
+
+                    .hero-section {
+                        height: calc(100vh - 13vh);
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
+                    .content {
+                        flex: 1;
+                    }
+
+                    .img-conteiner {
+                        flex: 1;
+                        position: relative;
+                    }
+
+                    .img-conteiner::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        background: var(--dawn-pink);
+                        width: 35rem;
+                        height: 30vh;
+                        border-radius: 50%;
+                        z-index: -1;
+                        filter: blur(100px);
+                    }
+
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+
+                    h1 {
+                        font-size: 3.5rem;
+                        line-height: 4rem;
+                        margin-top: 1rem;
+                    }
+
+                    .whatch {
+                        display: flex;
+                        align-items: center;
+                        gap: .5rem;
+                    }
+
+                    p {
+                        color: var(--gray-clr);
+                        margin-block: 1.5rem;
+                        max-width: 500px;
+                    }
+
+                    .btn-continer {
+                        display: flex;
+                        gap: 1.5rem;
+                    }
+
+                    button,
+                    .form-btn {
+                        background: var(--orange-clr);
+                        color: var(--white-clr);
+                        border: .1rem solid var(--orange-clr);
+                        padding: .55rem 1.5rem;
+                        border-radius: 5rem;
+                        font-size: 1rem;
+                    }
+
+                    [data-type='borderd-btn'] {
+                        background: transparent;
+                        color: var(--orange-clr);
+                    }
+
+                    /* <!-- Store section --> */
+
+                    .other-section {
+                        padding-block: 5rem;
+                    }
+
+                    .row-conteiner {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 5rem;
+                    }
+
+                    .column-canteiner {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    h2 {
+                        font-size: 1.8rem;
+                    }
+
+                    [ data-type="centerd-txt"] {
+                        text-align: center;
+                        max-width: 600px;
+                        margin-block: .5em;
+                    }
+
+                    .card-conteiner {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap: 2rem;
+                        margin-top: 2rem;
+                        width: 100%;
+                    F}
+F
+                    F.card {
+                    F    width: 15rem;
+                    F    text-align: center;
+                    F    border-radius: 1rem;
+                    F    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                    F    transition: .2s ease-in-out;
+                    F}
+F
+                    F.card:hover {
+                    F    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, .3) 0px 8px 16px -8px;
+                    F}
+F
+                    F.row-container {
+                    F    display: flex;
+                    F    flex-direction: row;
+                    F    justify-content: space-between;
+                    F    align-items: center;
+                    F    gap: 4.5rem;
+                    F}
+F
+                    F/* <!-- Featured Food --> */
+F
+                    Fh4 {
+                    F    font-weight: 600;
+                    F}
+F
+                    F[ data-type="category"] {
+                    F    padding-block: 2.5rem;
+                    F}
+F
+                    F[data-type="item"] {
+                    F    padding-bottom: 1.5rem;
+                    F    overflow: hidden;
+                    F}
+F
+                    F.image-part img {
+                    F    width: 100%;
+                    F    height: 100%;
+                    F    object-fit: cover;
+                    F}
+F
+                    F.detail {
+                    F    margin-top: 1rem;
+                    F}
+F
+                    F/* <!-- App section --> */
+F
+                    F.app-img {
+                    F    display: flex;
+                    F    gap: 1rem;
+                    F    width: 100%;
+                    F    height: 4rem;
+                    F}
+F
+                    F.app-img img {
+                    F    width: 180px;
+                    F    /* هم‌سایز */
+                    F    height: 55px;
+                    F    object-fit: contain;
+                    F    border-radius: 12px;
+                    F    /* گوشه‌های گرد */
+                    F    background: #000;
+                    F    /* برای PNG شفاف */
+                    F    padding: 6px 10px;
+                    F    transition: all 0.3s ease;
+                    F}
+F
+                    F/* افکت هاور */
+F
+                    F.app-img img:hover {
+                    F    transform: translateY(-3px);
+                    F    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+                    F    cursor: pointer;
+                    F}
+F
+                    F/* <!-- Best Food section --> */
+F
+                    F.rating img {
+                    F    width: 6rem;
+                    F}
+F
+                    F.rating h4 {
+                    F    color: var(--orange-clr);
+                    F    font-size: 1.3rem;
+                    F}
+F
+                    F.rating {
+                    F    display: flex;
+                    F    align-items: center;
+                    F    gap: 2rem;
+                    F    margin-top: 1rem;
+                    F}
+F
+                    F/* <!-- NewsLatter section --> */
+F
+                    F.form-canteiner {
+                    F    margin-top: 1.2rem;
+                    F    border: .02rem solid var(--light-clr);
+                    F    height: 3.5rem;
+                    F    border-radius: 5rem;
+                    F    padding: .25rem;
+                    F}
+F
+                    Finput[type="email"] {
+                    F    height: 100%;
+                    F    border-radius: 5rem 0 0 5rem;
+                    F    border: none;
+                    F    font-size: 1rem;
+                    F    padding-left: 1rem;
+                    F}
+F
+                    Finput:focus {
+                    F    outline: none;
+                    F}
+F
+                    F/* footer section */
+                    Ffooter{
+                    F    margin-bottom: 1rem;
+                    F}
+                    F.footer-links {
+                    F    font-size: .95rem;
+                    F    color: var(--gray-clr);
+F
+                    F}
+F
+                    F.footer-list {
+                    F    margin-top: 2rem;
+                    F}
+F
+                    F.footer-list li {
+                    F    margin-block: .5rem;
+                    F}
+F
+                    F[data-type="balanced-txt"] {
+                    F    max-width: 300px;
+                    F}
+F
+                    Ffooter .card-conteiner {
+                    F    justify-content: space-between;
+                    F}
+                    F.footer-links:hover{
+                    F    color: var(--orange-clr);
+                    F}
+                    F.line{
+                    F    width: 100%;
+                    F    height: 0.1rem;
+                    F    background: var(--light-clr);
+                    F    margin-block:2rem ;
+                    F}
