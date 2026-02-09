@@ -5,7 +5,4 @@ const hamburger = document.getElementById("hamburger")
 hamburger.addEventListener("click",()=>{
     navlist.classList.toggle("navlist-active")
 })
-let num1=""
-let num2=1
-let rusalt= num1+num2
-console.log(rusalt)
+let n= 
